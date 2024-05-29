@@ -31,7 +31,7 @@ function About(){
         <div className="row">
            <div className="col-md-6">
               <div className="ContentWrap">
-                 <p className="First">{page.data.acf.slider_box.Sub_Heading} hy</p>
+                 <p className="First">{page.data.acf.slider_box.Sub_Heading} by</p>
                  <h1 className="h1">{page.data.acf.slider_box.heading}</h1>
                  {
                      page.data.acf.slider_box.description.map((g)=>{
