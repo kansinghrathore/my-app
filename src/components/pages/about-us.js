@@ -34,8 +34,6 @@ function About(){
 
                  <p className="First">{page.data.acf.slider_box.Sub_Heading}</p>
 
-                 <p className="First">{page.data.acf.slider_box.Sub_Heading}</p>
-
                  <h1 className="h1">{page.data.acf.slider_box.heading}</h1>
                  {
                      page.data.acf.slider_box.description.map((g)=>{
