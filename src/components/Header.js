@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useRef, useEffect } from 'react';
 import axios from "axios";
 import { Link , useLocation } from 'react-router-dom';
@@ -13,6 +14,7 @@ function closeNavM() {
 }
 
 function Header(){
+  
   const [option, setOption] = useState({}); 
   useEffect(()=>{
     let url = `${process.env.REACT_APP_API_ROOT_OPTION}/theme-option/1854`
@@ -52,6 +54,7 @@ function Header(){
       window.removeEventListener('scroll', handleScrollEvent);
     };
   }, []);
+  const [show, setShow] = React.useState();
 
     return( <>
 
@@ -146,9 +149,9 @@ function Header(){
         </nav>
         
         <div className="RightWrapBtn">
-            <p className='LoginBtnPOp d-inline'>{ Object.keys(option).length ? ( <><Link to="#" className="LogBt"> <i className="fas fa-user"></i>  {option.data.acf.header.button_1.text} </Link></> ) : '' } </p>
+            <p className='LoginBtnPOp d-inline'>{ Object.keys(option).length ? ( <><Link to="#" onClick={() => setShow(!show)} className="LogBt"> <i className="fas fa-user"></i>  {option.data.acf.header.button_1.text} </Link></> ) : '' } </p>
             { Object.keys(option).length ? ( <><Link to={option.data.acf.header.button_2.link} className="LogBt Log"><i className="fas fa-user-plus"></i> {option.data.acf.header.button_2.text}</Link></> ) : '' }
-           <div className="LoginPopUp">
+           <div className={`LoginPopUp ${show ? "show" : ""}`}>
             <form method="post" action="https://logicdaddy.com/billing/dologin.php" className="login-form user-login-dropdown-form" data-form="validate">
               <div className="form-group username">
                 <input type="email" name="username" placeholder="Your Email" required className="form-control" />
