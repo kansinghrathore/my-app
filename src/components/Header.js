@@ -118,7 +118,7 @@ function Header(){
                                               return (
                                                 <div className="col-md-6 MarginBottomSection">
                                                 <div className="DropDownCard">
-                                                  <div className="Dicon"> <img src={m.icon} alt={m.menu_text} /> </div>
+                                                  <div className="Dicon"> <img src={m.icon} width="51" height="46" alt={m.menu_text}/> </div>
                                                   <div className="TxtBox"><Link onClick={scrollToTop} to={m.menu_link}>{m.menu_text} </Link>
                                                     <p>{m.label}</p>
                                                   </div>
@@ -130,7 +130,7 @@ function Header(){
                                             </div>
                                           </div>
                                           <div className="col-md-4 RightImgSectionMain">
-                                            <div className="RightImgSection"> <Link onClick={scrollToTop} to={g.image_box.link}> <img src={g.image_box.image} alt="Contact Us" /> </Link> </div>
+                                            <div className="RightImgSection"> <Link onClick={scrollToTop} to={g.image_box.link}> <img src={g.image_box.image} width="289" height="194" alt="Contact Us" /> </Link> </div>
                                           </div>
                                         </div>
                                       </div>
@@ -198,7 +198,7 @@ function Header(){
                                               return (
                                                 <div className="col-md-6 MarginBottomSection">
                                                 <div className="DropDownCard">
-                                                  <div className="Dicon"> <img src={m.icon} alt={m.menu_text} /> </div>
+                                                  <div className="Dicon"> <img src={m.icon} width="51" height="46" alt={m.menu_text}/> </div>
                                                   <div className="TxtBox" onClick={closeNavM}><Link onClick={scrollToTop} to={m.menu_link}>{m.menu_text} </Link>
                                                     <p>{m.label}</p>
                                                   </div>
