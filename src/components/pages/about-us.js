@@ -31,11 +31,11 @@ function About(){
         <div className="row">
            <div className="col-md-6">
               <div className="ContentWrap">
-<<<<<<< HEAD
+
                  <p className="First">{page.data.acf.slider_box.Sub_Heading}</p>
-=======
-                 <p className="First">{page.data.acf.slider_box.Sub_Heading} by</p>
->>>>>>> b0befddc66423c46af2b9751ccf78e29793b2b26
+
+                 <p className="First">{page.data.acf.slider_box.Sub_Heading}</p>
+
                  <h1 className="h1">{page.data.acf.slider_box.heading}</h1>
                  {
                      page.data.acf.slider_box.description.map((g)=>{
