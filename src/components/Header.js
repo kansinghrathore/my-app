@@ -106,7 +106,7 @@ function Header(){
           <li onClick={scrollToTop}><Link to={option.data.acf.header.menu[1].link} className={splitLocation[1] === "about-us" ? "active-new" : ""}>{option.data.acf.header.menu[1].label}</Link></li>
                     {
                      option.data.acf.header.mega_menu.map((g)=>{
-                        return (
+                        return ( 
                                   <li> <Link to="#" className="menu Hosting">{g.heading}<i className="fas fa-chevron-down"></i></Link>
                                     <div className="nav-dropdown ServicesInner">
                                       <div className="ServicesInnerdropdown">
@@ -142,12 +142,9 @@ function Header(){
             <li><Link onClick={scrollToTop} to={option.data.acf.header.menu[2].link} className={splitLocation[1] === "domain" ? "active-new" : ""}>{option.data.acf.header.menu[2].label}</Link> </li>
             <li><Link onClick={scrollToTop} to={option.data.acf.header.menu[3].link} className={splitLocation[1] === "portfolio" ? "active-new" : ""}>{option.data.acf.header.menu[3].label}</Link> </li>
            
-            <li> <Link onClick={scrollToTop} to={option.data.acf.header.menu[4].link} className={splitLocation[1] === "contact-us" ? "active-new" : ""}>{option.data.acf.header.menu[4].label}</Link></li>
-          
+            <li> <Link onClick={scrollToTop} to={option.data.acf.header.menu[4].link} className={splitLocation[1] === "contact-us" ? "active-new" : ""}>{option.data.acf.header.menu[4].label}</Link></li> 
             </ul>
-         
         </nav>
-        
         <div className="RightWrapBtn">
             <p className='LoginBtnPOp d-inline'>{ Object.keys(option).length ? ( <><Link to="#" onClick={() => setShow(!show)} className="LogBt"> <i className="fas fa-user"></i>  {option.data.acf.header.button_1.text} </Link></> ) : '' } </p>
             { Object.keys(option).length ? ( <><Link to={option.data.acf.header.button_2.link} className="LogBt Log"><i className="fas fa-user-plus"></i> {option.data.acf.header.button_2.text}</Link></> ) : '' }
@@ -237,9 +234,7 @@ function Header(){
   </div>
 </div>
 </div>
-
     </>
     )     
 }
-
 export default Header;
