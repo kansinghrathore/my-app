@@ -14,7 +14,7 @@ function Home(){
       useEffect(()=>{
         let url = `${process.env.REACT_APP_API_ROOT_OPTION}/pages/701`
         axios.get(url).then((res)=>{ 
-           //console.log('res',res); 
+           console.log('res',res); 
             setPage(res);       
         }).catch(err => {
             console.log('error', err.message);
